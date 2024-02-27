@@ -1,0 +1,6 @@
+spring:
+  hikari:
+    connection-timeout: 20000
+    idle-timeout: 300000
+    maximum-pool-size: 10
+    minimum-idle: 5
