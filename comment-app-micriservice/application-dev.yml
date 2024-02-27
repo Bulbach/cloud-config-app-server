@@ -1,6 +1,6 @@
 spring:
  cache:
-  algorithm: LRU
-  max_size: 1000
+   algorithm: LRU
+   max_size: 1000
  server:
-  port: 8081
+   port: 8082
