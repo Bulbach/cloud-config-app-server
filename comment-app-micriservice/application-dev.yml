@@ -8,8 +8,9 @@ spring:
               configurer: by.alex.commentAppMicriservice.configuration.LuceneConfig
             directory:
               root: src/main/resources/db.changelog/index
- cache:
-   algorithm: LRU
-   max_size: 1000
+  liquibase:              
+   cache:
+    algorithm: LRU
+    max_size: 1000
 server:
   port: 8082
