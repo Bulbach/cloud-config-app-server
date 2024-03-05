@@ -1,13 +1,14 @@
 spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/myClevertecDB
-    username: alex
-    password: alex
   liquibase:
     enabled: true
     change-log: classpath:changelog.yaml
    cache:
      algorithm: LRU
-     max_size: 1000    
+     max_size: 1000 
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/myClevertecDB
+    username: alex
+    password: alex
+     
   
