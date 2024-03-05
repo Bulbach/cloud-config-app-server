@@ -2,9 +2,9 @@ spring:
   liquibase:
     enabled: true
     change-log: classpath:changelog.yaml
-    cache:
-      algorithm: LRU
-      max_size: 1000
+  cache:
+    algorithm: LRU
+    max_size: 1000
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/myClevertecDB
