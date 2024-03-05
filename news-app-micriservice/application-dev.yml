@@ -13,6 +13,6 @@ spring:
               analysis:
                 configurer: by.alex.newsappmicriservice.configuration.LuceneConfig
               directory:
-                root: src/main/resources/db.changelog/index
+                root: src/main/resources/db/changelog/index
 server:
   port: 8081
