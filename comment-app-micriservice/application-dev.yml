@@ -1,15 +1,15 @@
 spring:
-   search:
-    backend:
-     analysis:
-      configurer: by.alex.commentAppMicriservice.configuration.LuceneConfig
-     directory:
-      root: src/main/resources/db.changelog/index
- liquibase:
+            search:
+            backend:
+              analysis:
+                configurer: by.alex.commentAppMicriservice.configuration.LuceneConfig
+              directory:
+                root: src/main/resources/db.changelog/index
+  liquibase:
     enabled: true
-    change-log: classpath:changelog.yaml      
-   cache:
-    algorithm: LRU
-    max_size: 1000
+    change-log: classpath:changelog.yaml
+    cache:
+      algorithm: LRU
+      max_size: 1000
 server:
   port: 8082
