@@ -5,6 +5,9 @@ spring:
       configurer: by.alex.commentAppMicriservice.configuration.LuceneConfig
      directory:
       root: src/main/resources/db.changelog/index
+  liquibase:
+    enabled: true
+    change-log: classpath:changelog.yaml      
    cache:
     algorithm: LRU
     max_size: 1000
